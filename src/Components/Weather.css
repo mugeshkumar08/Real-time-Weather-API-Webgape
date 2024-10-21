@@ -1,0 +1,47 @@
+.body{
+    background: url(./Assets/weather-bg.jpg);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header h1 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+b{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.searchBox{
+    width: 300px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.citySugg{
+    background-color: #e4e3e3;
+    align-items: center;
+    width: 300px;
+    height: 5vh;
+    border: 1px solid skyblue;
+}
+
+.citySugg:hover{
+    color: blue;
+    cursor: pointer;
+}

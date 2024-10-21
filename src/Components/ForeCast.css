@@ -1,0 +1,77 @@
+.weather-accordian{
+    max-width: 80%;
+}
+
+.weather-item{
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.weather-item-header{
+    background-color: #f7f7f7;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.weather-item-header:hover{
+    background-color: #e0e0e0;
+}
+
+.weather-item-body{
+    color: black;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    transition: max-height 0.5s ease;
+}
+
+.weather-item-body-content{
+    padding: 20px;
+}
+
+.weather-item.active .weather-item-body{
+    max-height: 100%;
+}
+
+.forcast-section{
+    margin-top: 40px;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.weatherDaily{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;  
+    transition: transform 0.5s ease;
+}
+
+.weatherDaily:hover{
+    transform: scale(1.05);
+}
+
+.weatherHourly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border: 1px solid #e0e0e0;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    transition: transform 0.5s ease;
+}
+
+.weatherHourly:hover{
+    background-color: #f7f7f7;
+    transform: scale(1.05);
+}
