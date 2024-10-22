@@ -1,0 +1,21 @@
+.map-container{
+    margin-top: 40px;
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    margin-left: 10%;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: transform 0.5s ease;
+}
+
+.map-container:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+h4{
+    margin-left: 40px;
+    margin-top: 40px;
+}

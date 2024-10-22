@@ -10,49 +10,46 @@ const Current = ({current, location}) => {
      {current && current.condition ? (
           <>
            <div className='container'>
-               <b> <i class="bi bi-geo-alt-fill" style={{color: 'red'}}></i> {location}</b>
+               <i class="bi bi-geo-alt-fill" style={{color: 'red'}}>{location}</i> 
                <span>
-               <img className='weatherImg' src={current.condition.icon} alt={current.condition.text} /> <br />
-               <span className='tempText'>{current.condition.text}</span>
-                   <b className='temp'>Temp:</b> <h1>{current.temp_c}°C</h1>
-                   
+               <div className='weatherImg'><img className='' src={current.condition.icon} alt={current.condition.text} /> </div>
+               <div className='tempText'> <b>Temp: {current.condition.text} </b> <span className='temp'>{current.temp_c}°C</span> </div>  
                </span>
                <span className='feelsLike'>
-                   <b>Feels like:</b>
-                   <h1>{current.feelslike_c}°C</h1>
+                   <div className='feelsLike'><b>Feels like:</b><span className='feelTemp'>{current.feelslike_c}°C</span></div>
                </span>
            </div>
            
            <div className='wrapper'>
                <div className='container-2'>
-                  <span>
-                  <i class="bi bi-wind" style={{fontSize: '25px', color: 'skyblue'}}></i> <b>Wind:</b>
-                      <h1>{current.wind_kph}kph</h1>
-                  </span>
+                  <div className='current1'>
+                  <i class="bi bi-wind" style={{fontSize: '40px', color: 'skyblue', marginLeft: '80px'}}></i> 
+                      <div className='currentTemp'><strong>Wind</strong> <span className='value'>{current.wind_kph}kph</span></div>
+                  </div>
                </div>
                <div className='container-2'>
-                  <span>
-                      <i class="bi bi-droplet-half" style={{color: 'skyblue', fontSize: '25px'}}></i> <b>Humidity:</b>
-                      <h1>{current.humidity}%</h1>
-                  </span>
+                  <div className='current1'>
+                      <i class="bi bi-droplet-half" style={{color: 'skyblue', fontSize: '40px', marginLeft: '80px'}}></i> 
+                      <div className='currentTemp'><strong>Humidity</strong> <span className='value'>{current.humidity}%</span></div>
+                  </div>
                </div>
                <div className='container-2'>
-                  <span>
-                      <i class="bi bi-brightness-high-fill" style={{color: 'gold', fontSize: '25px'}}></i> <b>UV Index:</b> <br />
-                      <h1>{current.uv}</h1>
-                  </span>
+                  <div className='current1'>
+                      <i class="bi bi-brightness-high-fill" style={{color: 'gold', fontSize: '40px', marginLeft: '80px'}}></i> 
+                      <div className='uv'><strong>UV Index</strong> <span className='value'>{current.uv}</span></div>
+                  </div>
                </div>
                <div className='container-2'>
-                  <span>
-                      <i class="bi bi-arrows-collapse" style={{fontSize: '25px'}}></i> <b>Pressure:</b> <br />
-                      <h1>{current.pressure_mb}mb</h1>
-                  </span>
+                  <div className='current1'>
+                      <i class="bi bi-arrows-collapse" style={{fontSize: '40px', marginLeft: '80px'}}></i> 
+                      <div className='Pressure'><b>Pressure</b> <span className='value'>{current.pressure_mb}mb</span></div>
+                  </div>
                </div>
                <div className='container-2'>
-                  <span>
-                  <i class="bi bi-eye" style={{fontSize: '25px'}}></i> <b>Visibility:</b> <br />
-                      <h1>{current.vis_km}km</h1>
-                  </span>
+                  <div className='current1'>
+                  <i class="bi bi-eye" style={{fontSize: '40px', marginLeft: '80px'}}></i> 
+                      <div className='currentTemp'><strong>Visibility</strong> <span className='value'>{current.vis_km}km</span></div>
+                  </div>
                </div>
            </div>
 
