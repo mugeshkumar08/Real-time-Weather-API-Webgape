@@ -3,8 +3,8 @@ import '../Components/Weather.css';
 import Current from './Current';
 import ForeCast from './ForeCast';
 
-const autoCompleteURL = 'https://api.weatherapi.com/v1/search.json?key=0902070d1c9443f082083517241910&q=';
-const weatherURL = (city) => `https://api.weatherapi.com/v1/forecast.json?key=0902070d1c9443f082083517241910&q=${city}&days=7&aqi=no&alerts=no`;
+const autoCompleteURL = 'https://api.weatherapi.com/v1/search.json?key=1bcab522ac77404f96b42442242210&q=';
+const weatherURL = (city) => `https://api.weatherapi.com/v1/forecast.json?key=1bcab522ac77404f96b42442242210&q=${city}&days=7&aqi=no&alerts=no`;
 const Header = () => {
   const [city, setCity] = useState('')
   const [clicked, setClicked] = useState(false);
